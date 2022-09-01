@@ -6,6 +6,8 @@
 //track of vertices in the recursion stack.
 
 //using dfs
+#include<bits/stdc++.h>
+using namespace std;
 class Solution {
   public:
   bool checkcycle(int src,vector<int>&vis,vector<int>&dfsvis,vector<int> adj[]){
@@ -40,3 +42,6 @@ class Solution {
        return false;
     }
 };
+
+
+//using bfs
