@@ -54,3 +54,18 @@ long long int countDerangements(int n) {
 }
 
 //using spaceoptimisation
+
+#define mod 1000000007
+long long int countDerangements(int n) {
+    long long int prev1=1;
+    long long int prev2=0;
+    for(int i=3;i<=n;i++){
+        long long int first=prev1%mod;
+        long long int second=prev2%mod;
+        long long int sum=(first+second)%mod;
+        long long int ans=((i-1)*sum)%mod;
+        prev2=prev1;
+        prev1=ans;
+    }
+    return prev1;
+}

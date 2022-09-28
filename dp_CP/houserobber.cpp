@@ -1,3 +1,6 @@
+//all cases are copy of max non-adjacent elements
+
+
 //space-optimisation
 class Solution {
 public:
