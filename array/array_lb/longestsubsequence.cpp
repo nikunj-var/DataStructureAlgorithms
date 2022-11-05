@@ -28,6 +28,32 @@
       return maxcount;
     }
 
+    int findLongestConseqSubseq(int arr[], int n)
+    {
+      //Your code here
+        sort(arr, arr+n);
+        int len = 1;
+        int maxlen = 1;
+        for(int i=1; i<n; i++)
+        {
+            if(arr[i] == arr[i-1] + 1)
+            {
+                len++;
+            }
+            else if(arr[i] == arr[i-1])
+            {
+                continue;
+            }
+            else
+            {
+                maxlen = max(maxlen, len);
+                len = 1;
+            }
+        }
+        maxlen = max(maxlen, len);
+      return maxlen;
+    }
+
 //approach2
 //using priorityqueue
     //Function to return length of longest subsequence of consecutive integers.
