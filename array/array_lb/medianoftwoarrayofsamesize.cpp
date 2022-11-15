@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
  
 double getMedian(int a1[],int a2[],int n){
