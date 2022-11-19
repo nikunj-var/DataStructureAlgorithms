@@ -1,7 +1,6 @@
 //using recursion
-
-#include <bits/stdc++.h> 
-
+#include<vector>
+using namespace std;
 int solve(vector<int>& weight, vector<int>& value,int index,int capacity){
     //base case
     if(index == 0){
@@ -25,7 +24,6 @@ int knapsack(vector<int> weight, vector<int> value, int n, int maxWeight)
 }
 
 //using recursion an memoization
-#include <bits/stdc++.h> 
 
 int solve(vector<int>& weight, vector<int>& value,int index,int capacity,vector<vector<int>>& dp){
     //base case
@@ -55,7 +53,7 @@ int knapsack(vector<int> weight, vector<int> value, int n, int maxWeight)
 }
 
 //using tabluation
-#include <bits/stdc++.h> 
+
 
 int solve(vector<int>& weight, vector<int>& value,int n,int capacity){
     //base case
@@ -84,7 +82,6 @@ int knapsack(vector<int> weight, vector<int> value, int n, int maxWeight)
 }
 
 //using space optimiation
-#include <bits/stdc++.h> 
 
 int solve(vector<int>& weight, vector<int>& value,int n,int capacity){
     //base case
