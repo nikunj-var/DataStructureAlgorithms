@@ -1,3 +1,4 @@
+//approach1
 class Solution {
 public:
     int maxSubStr(string str){
@@ -26,5 +27,32 @@ public:
     }
  
     return cnt;
+    }
+};
+
+//approach2
+class Solution {
+public:
+    int maxSubStr(string str){
+        if(str.length()%2 != 0)
+            return -1;
+        int ans=0;
+        int zero=0;
+        int one=0;
+        for(int i=0;i<str.length();i++){
+           if(str[i] == '0'){
+               zero++;
+           }
+           if(str[i] == '1'){
+               one++;
+           }
+           if(zero == one){
+               ans++;
+               zero=0;
+               one=0;
+           }
+        }
+        
+        return (zero==0&&one==0)?ans:-1;
     }
 };
