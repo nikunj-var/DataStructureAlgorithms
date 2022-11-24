@@ -87,3 +87,9 @@ int main()
     cout<<kruskal(g.edgelist);
     return 0;
 }
+
+
+int minimumspanning(vector<vector<int>>&edges,int n){
+    sort(edges.begin(),edges.end(),cmp);
+    vector<int> parent()
+}
