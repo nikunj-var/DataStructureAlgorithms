@@ -56,7 +56,6 @@ int main(){
     g->addedge(adj, 1, 2);
     g->addedge(adj, 2, 0);
     g->addedge(adj, 2, 3);
-    //g->addedge(adj, 2, 3);
     g->addedge(adj, 3, 3);
     //g->printgraph(adj,5);
     g->bfs(adj,2);

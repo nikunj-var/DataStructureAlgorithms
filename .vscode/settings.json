@@ -1,8 +1,12 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled",
-    "files.associations": {
-        "array": "cpp",
-        "string": "cpp",
-        "vector": "cpp"
-    }
+  "C_Cpp.errorSquiggles": "Disabled",
+  "files.associations": {
+    "array": "cpp",
+    "string": "cpp",
+    "vector": "cpp",
+    "iosfwd": "cpp",
+    "iterator": "cpp",
+    "__hash_table": "cpp",
+    "unordered_map": "cpp"
+  }
 }
